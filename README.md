@@ -23,3 +23,15 @@ Copy the static files to the main folder `/static`:
 Start the development server and connect to http://127.0.0.1:8000/ in your browser:
 
     python manage.py runserver
+
+Task
+----
+
+1. Set up the project on MacOSX or Linux (on a virtual machine, if you are on Windows) according to the guide above.
+2. Add an `Employee` model to `rest_datagrid` with an optional relationship to the `User` model, a full name, phone number, company, department, and occupation.
+   Also add an admin interface for it.
+3. Create an API with Django REST framework (already installed, but not configured in `settings.py`) for authenticated
+   users that shows employees.
+4. Use the DataTables plugin for jQuery to show a datagrid on the index page that uses the REST API you created.
+5. Create a short screencast (i.e. http://screencast-o-matic.com/) that demos the admin interface,
+   the API interface in the browser, and the datagrid.
