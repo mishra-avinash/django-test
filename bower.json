@@ -1,0 +1,9 @@
+{
+  "name": "rest-test",
+  "version": "0.0.1",
+  "dependencies": {
+    "admin-lte": "~2.0.4",
+    "font-awesome": "~4.3.0"
+  },
+  "private": true
+}
