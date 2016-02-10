@@ -35,5 +35,9 @@ Task
 3. Create an API with [Django REST framework](http://www.django-rest-framework.org/) (already installed, but not enabled or configured in `settings.py`) for authenticated
    users that shows employees. Use a `ViewSet`, `Serializer` and the DRF router.
 5. Use the DataTables plugin for jQuery to show a datagrid on the index page that uses the REST API you created. Use bower to install the latest stable release of DataTables. See `.bowerrc` for the installation path.
-6. Create a short screencast (i.e. http://screencast-o-matic.com/) that demos the admin interface,
+6. Create unit tests for your model and a web testcase for your API
+7. Create a short screencast (i.e. http://screencast-o-matic.com/) that demos the admin interface,
    the API interface in the browser, and the datagrid.
+8. Send the results via mail to philipp@motius.de - include the following things:
+  * Screencast
+  * Code as `zip` file or on Github
