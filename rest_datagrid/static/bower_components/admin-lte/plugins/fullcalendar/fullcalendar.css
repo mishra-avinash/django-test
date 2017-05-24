@@ -334,7 +334,7 @@ previous button's border...
 }
 
 
-/* Fake Table Rows
+/* Fake TableContainer Rows
 --------------------------------------------------------------------------------------------------*/
 
 .fc .fc-row { /* extra precedence to overcome themes w/ .ui-widget-content forcing a 1px border */
