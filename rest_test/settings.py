@@ -43,6 +43,8 @@ INSTALLED_APPS = (
     'django.contrib.admin',
 
     'rest_datagrid',
+    'rest_framework',
+    'webpack_loader',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -114,3 +116,19 @@ STATIC_URL = '/static/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+# adding pagination
+REST_FRAMEWORK = {
+    'PAGE_SIZE': 2,}
+
+STATICFILES_DIRS = (
+    #This lets Django's collectstatic store our bundles
+    os.path.join(BASE_DIR, 'assets'),
+)
+
+WEBPACK_LOADER = {
+    'DEFAULT': {
+        'BUNDLE_DIR_NAME': 'bundles/',
+        'STATS_FILE': os.path.join(BASE_DIR, 'react-app/webpack-stats.json'),
+    }
+}

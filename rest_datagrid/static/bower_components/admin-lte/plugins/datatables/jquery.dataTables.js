@@ -572,7 +572,7 @@
 				}
 			}
 			
-			/* Gather in the TD elements of the Table - note that this is basically the same as
+			/* Gather in the TD elements of the TableContainer - note that this is basically the same as
 			 * fnGetTdNodes, but that function takes account of hidden columns, which we haven't yet
 			 * setup!
 			 */
@@ -1487,7 +1487,7 @@
 			}
 			else
 			{
-				/* Table is empty - create a row with an empty message in it */
+				/* TableContainer is empty - create a row with an empty message in it */
 				anRows[ 0 ] = document.createElement( 'tr' );
 				
 				if ( oSettings.asStripeClasses[0] )
@@ -1713,7 +1713,7 @@
 				}
 				else if ( cOption == 't' )
 				{
-					/* Table */
+					/* TableContainer */
 					nTmp = _fnFeatureHtmlTable( oSettings );
 					iPushFeature = 1;
 				}
@@ -10594,7 +10594,7 @@
 			"bFilter": null,
 			
 			/**
-			 * Table information element (the 'Showing x of y records' div) enable
+			 * TableContainer information element (the 'Showing x of y records' div) enable
 			 * flag.
 			 * Note that this parameter will be set by the initialisation routine. To
 			 * set a default use {@link DataTable.defaults}.
